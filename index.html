@@ -1,8 +1,3 @@
-<?php
-if($_POST["message"]) {
-    mail("amwoodward13@gmail.com", "Form to email message", $_POST["message"], "From: amwoodward13@gmail.com");
-}
-?>
 <html>
 	<head>
 		<title>Amanda Mae Woodward</title>
@@ -308,7 +303,7 @@ if($_POST["message"]) {
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<section>
-									<form method="post" action="contact.php">
+									<form method="post" action="mailto:amwoodward13@gmail.com",enctype=”multipart/form-data”>
 										<div class="row gtr-50">
 											<div class="col-6 col-12-small">
 												<input name="name" placeholder="Name" type="text" />
@@ -320,7 +315,7 @@ if($_POST["message"]) {
 												<textarea name="message" placeholder="Message"></textarea>
 											</div>
 											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
+												<a href="mailto:amwoodward13@gmail.com" class="form-button-submit button icon solid fa-envelope">Send Message</a>
 											</div>
 										</div>
 									</form>

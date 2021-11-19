@@ -1,3 +1,8 @@
+<?php
+if($_POST["message"]) {
+    mail("amwoodward13@gmail.com", "Form to email message", $_POST["message"], "From: amwoodward13@gmail.com");
+}
+?>
 <html>
 	<head>
 		<title>Amanda Mae Woodward</title>
@@ -303,7 +308,7 @@
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<section>
-									<form method="post" action="https://formsubmit.co/amwoodward13@gmail.com">
+									<form method="post" action="contact.php">
 										<div class="row gtr-50">
 											<div class="col-6 col-12-small">
 												<input name="name" placeholder="Name" type="text" />
